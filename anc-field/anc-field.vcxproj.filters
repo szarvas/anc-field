@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="clh">
+      <UniqueIdentifier>{a2dae9f1-8f1c-4fe6-992e-97df858f22cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="civetweb">
+      <UniqueIdentifier>{f1f14f43-dff8-42de-8cda-c388111dd60c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\copy_plane.cl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\leapfrog.cl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\lrs_1.cl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\lrs_2.cl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\lrs_3.cl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\lrs_ghost.cl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\lrs_inout.cl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\source.cl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\mic.cl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\pml.cl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="elms.cl">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\glfw-visualization.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\image.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\kerkythea.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lrs-data.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mjpeg-handler.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mjpeg-visualizer.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pugiconfig.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pugixml.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\timing.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clh\clh.hpp">
+      <Filter>clh</Filter>
+    </ClInclude>
+    <ClInclude Include="clh\clh-buffer.hpp">
+      <Filter>clh</Filter>
+    </ClInclude>
+    <ClInclude Include="clh\clh-device.hpp">
+      <Filter>clh</Filter>
+    </ClInclude>
+    <ClInclude Include="clh\clh-device-descriptor.hpp">
+      <Filter>clh</Filter>
+    </ClInclude>
+    <ClInclude Include="clh\clh-kernel.hpp">
+      <Filter>clh</Filter>
+    </ClInclude>
+    <ClInclude Include="clh\clh-platform-manager.hpp">
+      <Filter>clh</Filter>
+    </ClInclude>
+    <ClInclude Include="clh\clh-vector.hpp">
+      <Filter>clh</Filter>
+    </ClInclude>
+    <ClInclude Include="civetweb\CivetServer.h">
+      <Filter>civetweb</Filter>
+    </ClInclude>
+    <ClInclude Include="civetweb\civetweb.h">
+      <Filter>civetweb</Filter>
+    </ClInclude>
+    <ClInclude Include="src\simulation.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\datafile.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\commandline.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pugixml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="civetweb\CivetServer.cpp">
+      <Filter>civetweb</Filter>
+    </ClCompile>
+    <ClCompile Include="civetweb\civetweb.c">
+      <Filter>civetweb</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
