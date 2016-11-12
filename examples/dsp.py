@@ -11,7 +11,7 @@ from anc_field_py.ancfield import *
 from anc_field_py.ancutil import *
 
 # Run a simulation using the CPU and the geometrical data
-# in the `simulation/dsp` folder. The simulation expects that
+# in the `models/dsp` folder. The simulation expects that
 # this folder will contain a Kerkythea model named `model.xml`
 # and the `material_a.dat`, `material_b.dat` files pertaining
 # to the materials referenced in it.
