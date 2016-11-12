@@ -24,8 +24,10 @@ from winpexpect import winspawn as spawn
 from subprocess import Popen, PIPE, STDOUT
 import re
 
-EXE_PATH = '../anc-field/build/anc-field.exe'
-#EXE_PATH = '../anc-field/build/anc-field.exe'
+def module_relative(path):
+    return os.path.join(os.path.dirname(__file__), path)
+
+EXE_PATH = module_relative('../anc-field/build/anc-field.exe')
 
 class AncField:
 	#fs = 29593
@@ -87,7 +89,6 @@ class AncField:
 #			self.command += 'save .ancfield/output.dat\nquit\n'
 
 		if 'vis' in self.command:
-#			vlc = Popen('vlc/VlcPortable.exe http://localhost:1440/live --qt-minimal-view')
 			vlc = Popen(r"C:\Program Files (x86)\VideoLAN\VLC\vlc.exe http://localhost:1440/live --qt-minimal-view")
 
 		print(self.command)
