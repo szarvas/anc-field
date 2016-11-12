@@ -21,13 +21,11 @@ from __future__ import division
 import numpy as np
 from scipy import signal
 
-def EstimateIr(input, output, N, mu):
+def EstimateIr(input, output, N, mu=1e-4):
 	W = np.zeros(N)
 
 	for m in range(0,16):
 		steps = min(np.size(input, 0), np.size(output, 0))
-	#	mu = 1e-4
-
 		x_buf = np.zeros(N)
 
 		for k in range(0, steps):

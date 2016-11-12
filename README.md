@@ -1,6 +1,6 @@
 #About
 
-![Sound pressure in a room](examples/nice.png)
+![Sound pressure in a room](examples/test_results/nice.png)
 
 **anc-field** is a collection of utilities for simulating active noise cancelling in room acoustic environments. All original content is released under the GNU GPL v3 license. Contents of the `anc-field` directory describe a high-performance core written in C++11 and OpenCL 1.1. The binary program can be used through a command line interface, but it is recommended to use the high-level Python wrapper instead.
 

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from __future__ import division
 
 import numpy as np
@@ -15,7 +16,7 @@ from anc_field_py.ancutil import *
 # this folder will contain a Kerkythea model named `model.xml`
 # and the `material_a.dat`, `material_b.dat` files pertaining
 # to the materials referenced in it.
-anc = AncField('cpu', 'models/dsp')
+anc = AncField('gpu', 'models/dsp')
 
 # Place a microphone at position x=3, y=1, z=1 in meters.
 # The acoustic pressure at this point will be recorder, and
@@ -48,3 +49,8 @@ h = EstimateIr(x[0,:], y, anc.fs)
 
 # Let's save the impulse response so that we can use it later
 np.savetxt('dsp_ir.dat', h)
+
+# Let's take a look at the IR
+# It should look something like `dsp_ir_plot.png`
+plt.plot(h)
+plt.show()
