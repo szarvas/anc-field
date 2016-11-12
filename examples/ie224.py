@@ -36,15 +36,14 @@ def add_microphones(ancObject):
     return ancObject
 
 # We create a simulation and immeatealy add microphones to it
-anc = add_microphones(AncField('cpu', 'models/ie224'))
-    
+#
+# Trying to run this simulation on CPU failed on an i7-3770, compiling the
+# lrs_1.cl file fails. It maybe because the scene's size is too large for
+# the CPU. Compiling it for the built in integrated GPU worked though.
+anc = add_microphones(AncField('gpu', 'models/ie224'))
+
 # noise_source
 anc.AddSource([4,1.6,1.0], bandnoise([100,2000], 11*32000, 32000))
 
 anc.Visualize(1.6)
 (x,y) = anc.Run(10)
-
-#h = EstimateIr(x[0,:], y, anc.fs)
-#np.savetxt('h_'+sim+'.dat', h)
-#h = EstimateIr(x[0::4], y[6,0::4], 3*8e3, 1e-4)
-#savetxt('noise_to_reference_bottom.dat', h)

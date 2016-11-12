@@ -11,7 +11,7 @@ sys.path.append('..')
 from anc_field_py.ancfield import *
 from anc_field_py.ancutil import *
 
-anc = AncField('cpu', 'models/room_modes')
+anc = AncField('gpu', 'models/room_modes')
 
 anc.AddSource([0.48,0.48,0.48], 10*impulse(2000, 6*32000, 32000))
 anc.AddMic([0.5,0.2,0.3])
