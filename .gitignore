@@ -25,6 +25,7 @@ Thumbs.db
 *.opendb
 *.db
 log
+logs
 [Bb]in
 [Dd]ebug*/
 *.lib

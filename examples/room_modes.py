@@ -13,7 +13,7 @@ from anc_field_py.ancutil import *
 
 anc = AncField('gpu', 'models/room_modes')
 
-anc.AddSource([0.48,0.48,0.48], 10*impulse(2000, 6*32000, 32000))
+anc.AddSource([1.48,0.48,0.48], 10*impulse(2000, 6*32000, 32000))
 anc.AddMic([0.5,0.2,0.3])
 anc.AddMic([0.4,0.4,0.4])
 anc.AddMic([1.5,1.2,3])

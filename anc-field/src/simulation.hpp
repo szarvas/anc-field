@@ -158,7 +158,7 @@ private:
 Simulation::Simulation(std::vector<clh::Device> devices, real res)
 	: devices_{devices}, res_{res}, size_x_{0}, size_y_{0}, size_z_{0}
 {
-	//lambda2_ = 0.3f;
+	//lambda2_ = 0.33f;
 	c_ = 340.0f;
 	dx_ = 0.02f;
 	//dt_ = sqrt(lambda2_)*dx_/c_;

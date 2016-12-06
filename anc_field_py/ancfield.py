@@ -45,6 +45,9 @@ class AncField:
 			raise Exception('Location \''+exeloc+'\' doesn\'t exist')
 
 		self.command = 'sdt '+device+'\n'
+  		# TODO HACK ETC because i want to use the third device (index=2)
+  		# and not the first GPU on my computer
+		# self.command = 'sd 2\n'
 
 		if model != None:
 			self.command += 'load '+model+'/model.xml\n'
