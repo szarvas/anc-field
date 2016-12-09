@@ -43,3 +43,4 @@ Makefile
 *.opensdf
 *.suo
 build_tmp
+*.asv
